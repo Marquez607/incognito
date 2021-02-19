@@ -50,6 +50,12 @@ build/librsa.a: \
 	$(CXX) -c -o build/rsa.o src/rsa.cpp $(INCLUDES)
 	ar rcs build/librsa.a build/rsa.o
 
+build/libaes.a: \
+  src/aes.cpp \
+  include/aes.hpp
+	$(CXX) -c -o build/aes.o src/aes.cpp $(INCLUDES)
+	ar rcs build/libaes.a build/aes.o
+
 build/server/libtcp_server.a: \
   src/server/tcp_server.cpp \
   include/server/tcp_server.hpp \
