@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <iostream>
 
-#include "rsa.hpp"
+#include "rsa/rsa.hpp"
 
 class ClientSession
 {
